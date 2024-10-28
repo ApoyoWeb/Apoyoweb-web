@@ -1,0 +1,31 @@
+/* Header */
+.navbar {
+  background-color: #0A1128; /* DARK BLUE */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  color: #FFECFB; /* WHITE */
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-link {
+  font-size: 18px;
+  color: #FFECFB; /* WHITE */
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #1282A2; /* LIGHT BLUE */
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
