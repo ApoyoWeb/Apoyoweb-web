@@ -1,3 +1,58 @@
 <app-navbar-home></app-navbar-home>
 
+<main>
+  <div class="register-container">
+    <h2 class="register-header">Crea tu cuenta en ApoyoWeb</h2>
+    <p class="register-subtext">Completa los campos para registrarte</p>
+
+
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="register-form">
+
+      <div class="form-group">
+        <mat-form-field appearance="outline" class="form-input">
+          <mat-label>Nombre Completo</mat-label>
+          <input matInput formControlName="fullName" placeholder="Introduce tu nombre completo">
+          <mat-error *ngIf="controlHasError('fullName', 'required')">Este campo es obligatorio</mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="form-group">
+        <mat-form-field appearance="outline" class="form-input">
+          <mat-label>Correo Electrónico</mat-label>
+          <input matInput formControlName="email" placeholder="Introduce tu correo">
+          <mat-error *ngIf="controlHasError('email', 'required')">Este campo es obligatorio</mat-error>
+          <mat-error *ngIf="controlHasError('email', 'email')">Introduzca un correo electrónico válido</mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="form-group">
+        <mat-form-field appearance="outline" class="form-input">
+          <mat-label>Contraseña</mat-label>
+          <input matInput formControlName="password" type="password" placeholder="Introduce tu contraseña">
+          <mat-error *ngIf="controlHasError('password', 'required')">Este campo es obligatorio</mat-error>
+          <mat-error *ngIf="controlHasError('password', 'minlength')">La contraseña debe tener al menos 6 caracteres</mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="form-group">
+        <mat-form-field appearance="outline" class="form-input">
+          <mat-label>Confirmar Contraseña</mat-label>
+          <input matInput formControlName="confirmPassword" type="password" placeholder="Repite tu contraseña">
+          <mat-error *ngIf="controlHasError('confirmPassword', 'required')">Este campo es obligatorio</mat-error>
+          <mat-error *ngIf="controlHasError('confirmPassword', 'mustMatch')">Las contraseñas no coinciden</mat-error>
+        </mat-form-field>
+      </div>
+
+
+      <button mat-raised-button color="primary" class="submit-button" type="submit" [disabled]="registerForm.invalid">
+        Registrarse
+      </button>
+    </form>
+
+    <p class="login-link">
+      ¿Ya tienes cuenta? <a routerLink="/auth/login">Inicia sesión aquí</a>
+    </p>
+  </div>
+</main>
+
 <app-footer></app-footer>
