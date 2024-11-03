@@ -3,7 +3,6 @@
 <main class="tutoria-management-container">
   <h2 class="management-title">Mis Tutorías</h2>
 
-  <!-- Lista de Tutorías -->
   <div class="tutoria-list">
     <div *ngFor="let tutoria of tutorias" class="tutoria-card">
       <h3 class="tutoria-name">{{ tutoria.nombre }}</h3>
@@ -13,7 +12,6 @@
     </div>
   </div>
 
-  <!-- Botones de Acción -->
   <div class="action-buttons">
     <button class="action-button" routerLink="/tutor/crear-tutoria">Crear Tutoría Grupal</button>
     <button class="action-button" routerLink="/tutor/crear-tutoria-personal">Crear Tutoría Personal</button>

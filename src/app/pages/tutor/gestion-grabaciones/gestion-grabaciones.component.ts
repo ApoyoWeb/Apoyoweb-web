@@ -22,7 +22,6 @@ export class GestionGrabacionesComponent {
     { titulo: 'Grabación 1', descripcion: 'Descripción de la grabación 1.' },
     { titulo: 'Grabación 2', descripcion: 'Descripción de la grabación 2.' },
     { titulo: 'Grabación 3', descripcion: 'Descripción de la grabación 3.' },
-    // Agrega más grabaciones aquí según sea necesario
   ];
 
   constructor(private snackBar: MatSnackBar) {}

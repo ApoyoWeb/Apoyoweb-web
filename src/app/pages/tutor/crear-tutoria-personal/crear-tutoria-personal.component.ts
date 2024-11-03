@@ -22,16 +22,13 @@ export class CrearTutoriaPersonalComponent {
   constructor(private snackbar: MatSnackBar, private router: Router) {}
 
   crearTutoriaPersonal(): void {
-    // Aquí podrías implementar la lógica para enviar los datos al servidor
 
-    // Muestra el mensaje de éxito
     this.snackbar.open('La tutoría personal se creó correctamente', 'Cerrar', {
       duration: 3000,
       horizontalPosition: 'center',
       verticalPosition: 'top'
     });
 
-    // Redirige a la página de gestión de tutorías después de un breve retraso
     setTimeout(() => {
       this.router.navigate(['/tutor/gestion-tutoria']);
     }, 3000);

@@ -4,7 +4,6 @@
   <h2>{{ curso }}</h2>
   <p>Bienvenido a la página del curso "{{ curso }}". Aquí puedes gestionar tus contenidos, tareas y estudiantes.</p>
 
-  <!-- Sección de Acciones -->
   <div class="course-actions">
     <button routerLink="/tutor/subir-material" class="action-button">Subir Contenido</button>
     <button routerLink="/tutor/asignar-tarea" class="action-button">Asignar Tareas</button>
@@ -14,7 +13,6 @@
     <button routerLink="/tutor/gestion-tutoria" class="action-button">Tutorias</button>
   </div>
 
-  <!-- Unidades y Semanas -->
   <div class="units-container">
     <div class="unit">
       <button class="unit-toggle" (click)="toggleUnit('first')">Primera Unidad</button>

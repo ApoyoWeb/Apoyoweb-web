@@ -17,6 +17,6 @@ export class CursosGeneralComponent {
 
   selectCurso(curso: string) {
     this.selectedCurso = curso;
-    this.router.navigate(['/tutor/curso-individual', curso]); // Navega a curso-individual con el nombre del curso como parámetro
+    this.router.navigate(['/tutor/curso-individual', curso]);
   }
 }
