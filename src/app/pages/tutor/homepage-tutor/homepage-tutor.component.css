@@ -1,0 +1,32 @@
+.homepage-tutor-container {
+  justify-content: center;
+  min-height: calc(100vh - 155px);
+  padding: 20px;
+  text-align: center;
+  color: #0A1128;
+}
+
+.homepage-tutor-container h1 {
+  font-size: 36px;
+  color: #1282A2;
+  margin-bottom: 20px;
+}
+
+.section-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.button-link {
+  padding: 10px 20px;
+  background-color: #034078;
+  color: #FFECFB;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.button-link:hover {
+  background-color: #001F54;
+}

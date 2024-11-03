@@ -1,0 +1,64 @@
+.upload-content-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px;
+  min-height: calc(100vh - 120px);
+  background-color: #ffffff;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.upload-content-container h2 {
+  font-size: 36px;
+  color: #034078;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-group {
+  width: 100%; /* Asegura que el grupo ocupe todo el ancho */
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  width: 100%;
+  font-size: 20px; /* Aumenta el tamaño de la fuente */
+  padding: 15px;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+textarea {
+  width: 100%; /* Asegura que el área de texto ocupe todo el ancho */
+  min-height: 150px;
+  font-size: 18px;
+  padding: 15px;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+.mat-form-field {
+  width: 100%;
+  font-size: 20px;
+}
+
+.submit-button {
+  padding: 20px;
+  font-size: 20px;
+  background-color: #1282A2;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #034078;
+}

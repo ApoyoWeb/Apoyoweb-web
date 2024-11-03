@@ -1,1 +1,53 @@
-<p>subir-material works!</p>
+<app-navbar-tutor></app-navbar-tutor>
+
+<main class="upload-content-container">
+  <h2>Subir Material</h2>
+  <p>Complete los siguientes campos para subir el material.</p>
+
+  <form class="upload-form">
+    <!-- Campo Nombre -->
+    <div class="form-group">
+      <label for="materialName">Nombre del Material</label>
+      <input type="text" id="materialName" placeholder="Introduce el nombre del material" />
+    </div>
+
+    <!-- Campo Descripción -->
+    <div class="form-group">
+      <label for="materialDescription">Descripción</label>
+      <textarea id="materialDescription" rows="4" placeholder="Introduce una descripción"></textarea>
+    </div>
+
+    <!-- Seleccionar Unidad -->
+    <div class="form-group">
+      <label for="unidad">Selecciona la Unidad:</label>
+      <select id="unidad" class="form-input" [(ngModel)]="unidadSeleccionada" required>
+        <option value="" disabled selected>Selecciona una unidad</option>
+        <option value="1">Primera Unidad</option>
+        <option value="2">Segunda Unidad</option>
+        <option value="3">Tercera Unidad</option>
+      </select>
+    </div>
+
+    <!-- Seleccionar Semana -->
+    <div class="form-group">
+      <label for="semana">Selecciona la Semana:</label>
+      <select id="semana" class="form-input" [(ngModel)]="semanaSeleccionada" required>
+        <option value="" disabled selected>Selecciona una semana</option>
+        <ng-container *ngIf="unidadSeleccionada === '1'">
+          <option *ngFor="let semana of [1, 2, 3, 4, 5]" [value]="semana">Semana {{ semana }}</option>
+        </ng-container>
+        <ng-container *ngIf="unidadSeleccionada === '2'">
+          <option *ngFor="let semana of [6, 7, 8, 9, 10, 11]" [value]="semana">Semana {{ semana }}</option>
+        </ng-container>
+        <ng-container *ngIf="unidadSeleccionada === '3'">
+          <option *ngFor="let semana of [12, 13, 14, 15, 16]" [value]="semana">Semana {{ semana }}</option>
+        </ng-container>
+      </select>
+    </div>
+
+    <!-- Botón de Subir -->
+    <button type="button" class="submit-button" (click)="subirMaterial()">Subir Material</button>
+  </form>
+</main>
+
+<app-footer></app-footer>

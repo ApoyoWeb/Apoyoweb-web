@@ -1,1 +1,47 @@
-<p>evaluar-desempeno works!</p>
+<app-navbar-tutor></app-navbar-tutor>
+
+<main class="evaluate-performance-container">
+  <h2 class="evaluate-title">Evaluar Desempeño del Curso</h2>
+
+  <!-- Opción de Reporte General -->
+  <section class="report-section">
+    <h3>Reporte General</h3>
+    <p>Genera un reporte de desempeño general para todos los estudiantes del curso.</p>
+    <button type="button" class="generate-button" (click)="generarReporteGeneral()">
+      Generar Reporte General
+    </button>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Opción de Reporte Personalizado -->
+  <section class="report-section">
+    <h3>Reporte Personalizado</h3>
+    <p>Genera un reporte de desempeño personalizado para un estudiante específico.</p>
+
+    <form class="custom-report-form">
+      <div class="form-group">
+        <label for="studentSelect">Selecciona un Estudiante</label>
+        <select id="studentSelect" [(ngModel)]="selectedStudent" name="studentSelect">
+          <option *ngFor="let student of students" [value]="student">{{ student }}</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="reportTitle">Título del Reporte</label>
+        <input type="text" id="reportTitle" [(ngModel)]="reportTitle" placeholder="Introduce el título del reporte" />
+      </div>
+
+      <div class="form-group">
+        <label for="reportDescription">Descripción del Reporte</label>
+        <textarea id="reportDescription" [(ngModel)]="reportDescription" rows="4" placeholder="Introduce una descripción"></textarea>
+      </div>
+
+      <button type="button" class="generate-button" (click)="generarReportePersonalizado()">
+        Generar Reporte Personalizado
+      </button>
+    </form>
+  </section>
+</main>
+
+<app-footer></app-footer>
