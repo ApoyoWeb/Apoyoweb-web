@@ -44,7 +44,6 @@ export class EvaluarDesempenoComponent {
       verticalPosition: 'top',
     });
 
-    // Opcional: Restablecer campos del formulario después de la generación del reporte
     this.selectedStudent = null;
     this.reportTitle = '';
     this.reportDescription = '';

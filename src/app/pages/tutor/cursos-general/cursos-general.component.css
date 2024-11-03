@@ -1,13 +1,13 @@
 .cursos-container {
   padding: 40px 20px;
   text-align: center;
-  background-color: #f3f4f6; /* Fondo gris claro */
+  background-color: #f3f4f6;
   min-height: calc(100vh - 155px);
 }
 
 .title {
   font-size: 32px;
-  color: #0A1128; /* Azul oscuro */
+  color: #0A1128;
   margin-bottom: 30px;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -31,23 +31,23 @@
 
 .curso-card:hover {
   transform: scale(1.05);
-  border-color: #034078; /* Azul para indicar selección */
+  border-color: #034078;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .curso-card h3 {
   font-size: 20px;
-  color: #034078; /* Azul fuerte */
+  color: #034078;
   margin-bottom: 10px;
 }
 
 .curso-card p {
   font-size: 16px;
-  color: #0A1128; /* Azul oscuro */
+  color: #0A1128;
 }
 
-/* Clase común para mostrar selección de curso */
+
 .curso-card.selected {
-  border-color: #1282A2; /* Resaltar con un azul diferente */
-  background-color: #e0f7fa; /* Fondo azul claro */
+  border-color: #1282A2;
+  background-color: #e0f7fa;
 }

@@ -5,19 +5,16 @@
   <p>Complete los siguientes campos para subir el material.</p>
 
   <form class="upload-form">
-    <!-- Campo Nombre -->
     <div class="form-group">
       <label for="materialName">Nombre del Material</label>
       <input type="text" id="materialName" placeholder="Introduce el nombre del material" />
     </div>
 
-    <!-- Campo Descripción -->
     <div class="form-group">
       <label for="materialDescription">Descripción</label>
       <textarea id="materialDescription" rows="4" placeholder="Introduce una descripción"></textarea>
     </div>
 
-    <!-- Seleccionar Unidad -->
     <div class="form-group">
       <label for="unidad">Selecciona la Unidad:</label>
       <select id="unidad" class="form-input" [(ngModel)]="unidadSeleccionada" required>
@@ -28,7 +25,6 @@
       </select>
     </div>
 
-    <!-- Seleccionar Semana -->
     <div class="form-group">
       <label for="semana">Selecciona la Semana:</label>
       <select id="semana" class="form-input" [(ngModel)]="semanaSeleccionada" required>
@@ -45,7 +41,6 @@
       </select>
     </div>
 
-    <!-- Botón de Subir -->
     <button type="button" class="submit-button" (click)="subirMaterial()">Subir Material</button>
   </form>
 </main>
