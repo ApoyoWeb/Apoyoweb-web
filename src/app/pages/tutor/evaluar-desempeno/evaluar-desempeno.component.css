@@ -1,0 +1,65 @@
+.evaluate-performance-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.evaluate-title {
+  font-size: 30px;
+  color: #034078;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.report-section {
+  margin-bottom: 20px;
+}
+
+.report-section h3 {
+  font-size: 24px;
+  color: #1282A2;
+  margin-bottom: 10px;
+}
+
+.divider {
+  margin: 20px 0;
+  border: none;
+  border-top: 2px solid #e0e0e0;
+}
+
+.generate-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #1282A2;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.generate-button:hover {
+  background-color: #034078;
+}
+
+.custom-report-form .form-group {
+  margin-bottom: 15px;
+}
+
+.custom-report-form label {
+  font-weight: bold;
+}
+
+.custom-report-form select,
+.custom-report-form input,
+.custom-report-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

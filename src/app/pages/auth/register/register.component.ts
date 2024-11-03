@@ -7,6 +7,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { FooterComponent } from '../../../shared/components/footer/footer.component';
 import { NavbarHomeComponent } from '../../../shared/components/navbar-home/navbar-home.component';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-register',
@@ -20,7 +21,7 @@ import { NavbarHomeComponent } from '../../../shared/components/navbar-home/navb
     MatSnackBarModule,
     MatInputModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule, NgIf
   ],
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']

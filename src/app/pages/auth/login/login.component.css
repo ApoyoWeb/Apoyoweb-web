@@ -26,6 +26,27 @@ main {
   color: #FFECFB;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+/* Selección de rol */
+.role-selection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.role-selection mat-radio-button {
+  margin: 0 10px;
+  color: #FFECFB;
+}
+
+.mat-radio-checked .mat-radio-inner-circle {
+  background-color: #1282A2; /* Color de selección */
+}
+
+.mat-radio-label-content {
+  font-size: 16px;
+  color: #FFECFB;
+}
+
 
 .login-header {
   font-size: 28px;

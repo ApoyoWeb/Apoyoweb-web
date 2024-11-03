@@ -1,0 +1,59 @@
+.recordings-management-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.management-title {
+  font-size: 30px;
+  color: #034078;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.no-recordings {
+  text-align: center;
+  color: #666;
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.recording-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.recording-description h3 {
+  margin: 0 0 5px;
+  font-size: 20px;
+  color: #034078;
+}
+
+.recording-description p {
+  margin: 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.delete-button {
+  padding: 10px 15px;
+  background-color: #c0392b;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #e74c3c;
+}

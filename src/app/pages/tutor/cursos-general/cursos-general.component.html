@@ -1,0 +1,32 @@
+<app-navbar-tutor></app-navbar-tutor>
+
+<main class="cursos-container">
+  <h2 class="title">Mis Cursos</h2>
+  <div class="cursos-grid">
+    <!-- Curso "Mi propio repositorio" -->
+    <div class="curso-card" (click)="selectCurso('Mi propio repositorio')">
+      <h3>Mi propio repositorio</h3>
+      <p>Cantidad de alumnos: 1000</p>
+    </div>
+
+    <!-- Otros cursos de programación -->
+    <div class="curso-card" (click)="selectCurso('Introducción a la Programación')">
+      <h3>Introducción a la Programación</h3>
+      <p>Cantidad de alumnos: 50</p>
+    </div>
+    <div class="curso-card" (click)="selectCurso('Estructuras de Datos')">
+      <h3>Estructuras de Datos</h3>
+      <p>Cantidad de alumnos: 45</p>
+    </div>
+    <div class="curso-card" (click)="selectCurso('Algoritmos Avanzados')">
+      <h3>Algoritmos Avanzados</h3>
+      <p>Cantidad de alumnos: 30</p>
+    </div>
+    <div class="curso-card" (click)="selectCurso('Desarrollo Web')">
+      <h3>Desarrollo Web</h3>
+      <p>Cantidad de alumnos: 60</p>
+    </div>
+  </div>
+</main>
+
+<app-footer></app-footer>

@@ -1,1 +1,24 @@
-<p>gestion-tutoria works!</p>
+<app-navbar-tutor></app-navbar-tutor>
+
+<main class="tutoria-management-container">
+  <h2 class="management-title">Mis Tutorías</h2>
+
+  <!-- Lista de Tutorías -->
+  <div class="tutoria-list">
+    <div *ngFor="let tutoria of tutorias" class="tutoria-card">
+      <h3 class="tutoria-name">{{ tutoria.nombre }}</h3>
+      <p class="tutoria-info">Hora de Inicio: {{ tutoria.horaInicio }}</p>
+      <p class="tutoria-info">Hora de Fin: {{ tutoria.horaFin }}</p>
+      <p class="tutoria-info">Precio: {{ tutoria.precio | currency }}</p>
+    </div>
+  </div>
+
+  <!-- Botones de Acción -->
+  <div class="action-buttons">
+    <button class="action-button" routerLink="/tutor/crear-tutoria">Crear Tutoría Grupal</button>
+    <button class="action-button" routerLink="/tutor/crear-tutoria-personal">Crear Tutoría Personal</button>
+    <button class="action-button" routerLink="/tutor/gestion-grabaciones">Ver Grabaciones</button>
+  </div>
+</main>
+
+<app-footer></app-footer>
