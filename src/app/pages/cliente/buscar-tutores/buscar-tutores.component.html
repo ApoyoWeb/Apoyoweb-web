@@ -1,1 +1,58 @@
-<p>buscar-tutores works!</p>
+<app-navbar-cliente></app-navbar-cliente>
+
+<main class="buscar-tutores">
+  <section class="search-bar">
+    <h2>Buscar Tutores</h2>
+    <input type="text" placeholder="Buscar por nombre del tutor" [(ngModel)]="searchName" class="search-input" />
+    <select [(ngModel)]="searchCategory" class="category-select">
+      <option value="">Selecciona una categoría</option>
+      <option value="Matemáticas">Matemáticas</option>
+      <option value="Física">Física</option>
+      <option value="Programación">Programación</option>
+    </select>
+    <button (click)="toggleAdvancedSearch()" class="advanced-search-button">Búsqueda Avanzada</button>
+    <button (click)="searchTutors()" class="search-button">Buscar</button>
+  </section>
+
+  <section *ngIf="showAdvancedSearch" class="advanced-search">
+    <h3>Opciones de Búsqueda Avanzada</h3>
+    <div class="filter-group">
+      <label>Disponibilidad:</label>
+      <select [(ngModel)]="availability">
+        <option value="">Selecciona disponibilidad</option>
+        <option value="mañana">Mañana</option>
+        <option value="tarde">Tarde</option>
+        <option value="noche">Noche</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label>Rango de precios:</label>
+      <input type="number" [(ngModel)]="priceMin" placeholder="Precio mínimo" />
+      <input type="number" [(ngModel)]="priceMax" placeholder="Precio máximo" />
+    </div>
+    <div class="filter-group">
+      <label>Ordenar por:</label>
+      <select [(ngModel)]="sortOrder">
+        <option value="ranking">Ranking</option>
+        <option value="precio">Precio</option>
+      </select>
+    </div>
+  </section>
+
+  <section class="search-results" *ngIf="filteredTutors.length > 0">
+    <h3>Resultados de búsqueda</h3>
+    <div *ngFor="let tutor of filteredTutors" class="tutor-card">
+      <h4>{{ tutor.name }}</h4>
+      <p>Categoría: {{ tutor.category }}</p>
+      <p>Ranking: {{ tutor.ranking }}</p>
+      <p>Precio por hora: S/{{ tutor.price }}</p>
+      <button class="contact-button">Contactar</button>
+    </div>
+  </section>
+
+  <section *ngIf="filteredTutors.length === 0 && searchPerformed" class="no-results">
+    <p>No se encontraron tutores con los criterios de búsqueda.</p>
+  </section>
+</main>
+
+<app-footer></app-footer>

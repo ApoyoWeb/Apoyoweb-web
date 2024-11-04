@@ -6,15 +6,6 @@
     <p class="login-subtext">Por favor, inicia sesión para continuar</p>
 
     <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="login-form">
-
-      <!-- Selección de rol -->
-      <div class="form-group role-selection">
-        <mat-radio-group [(ngModel)]="userRole" aria-label="Selecciona tu rol">
-          <mat-radio-button value="tutor">Tutor</mat-radio-button>
-          <mat-radio-button value="cliente">Cliente</mat-radio-button>
-        </mat-radio-group>
-      </div>
-
       <div class="form-group">
         <mat-form-field appearance="outline" class="form-input">
           <mat-label>Correo Electrónico</mat-label>
@@ -31,6 +22,14 @@
           <mat-error *ngIf="controlHasError('password', 'required')">Este campo es obligatorio</mat-error>
           <mat-error *ngIf="controlHasError('password', 'minlength')">La contraseña debe tener al menos 6 caracteres</mat-error>
         </mat-form-field>
+      </div>
+
+      <div class="form-group">
+        <label>Selecciona tu rol:</label>
+        <mat-radio-group formControlName="userRole" aria-label="userRole">
+          <mat-radio-button value="cliente">Cliente</mat-radio-button>
+          <mat-radio-button value="tutor">Tutor</mat-radio-button>
+        </mat-radio-group>
       </div>
 
       <button mat-raised-button color="primary" class="submit-button" type="submit" [disabled]="loginForm.invalid">

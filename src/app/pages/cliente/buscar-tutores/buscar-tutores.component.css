@@ -1,0 +1,61 @@
+.buscar-tutores {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-input, .category-select, .advanced-search-button, .search-button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.advanced-search {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f4f8fb;
+  border-radius: 8px;
+}
+
+.filter-group {
+  margin: 10px 0;
+}
+
+.tutor-card {
+  padding: 20px;
+  margin: 10px 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.contact-button {
+  padding: 10px;
+  background-color: #034078;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.contact-button:hover {
+  background-color: #001F54;
+}
+
+.no-results {
+  text-align: center;
+  color: #666;
+  margin-top: 20px;
+}
