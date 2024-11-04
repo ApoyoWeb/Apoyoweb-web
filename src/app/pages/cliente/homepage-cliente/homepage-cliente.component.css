@@ -1,0 +1,79 @@
+.cliente-homepage {
+  font-family: Arial, sans-serif;
+}
+
+/* Sección de bienvenida */
+.welcome-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f4f8fb;
+}
+
+.welcome-section h1 {
+  font-size: 36px;
+  color: #034078;
+}
+
+.welcome-section p {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #034078;
+}
+
+/* Botón de llamada a la acción */
+.cta-button {
+  padding: 10px 20px;
+  background-color: #034078;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #001F54;
+}
+
+/* Sección de beneficios */
+.benefits-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.benefits-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+.benefits-section li {
+  font-size: 18px;
+  color: #034078;
+  margin: 10px 0;
+}
+
+/* Reseñas destacadas */
+.featured-reviews {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.review {
+  background-color: #f4f8fb;
+  padding: 20px;
+  border-radius: 5px;
+  color: #034078;
+  font-size: 18px;
+}

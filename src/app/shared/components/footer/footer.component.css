@@ -1,9 +1,9 @@
-/* Footer */
+
 .footer-section {
-  background-color: #001F54; /* DARK BLUE */
+  background-color: #001F54;
   padding: 20px;
   text-align: center;
-  color: #FFECFB; /* WHITE */
+  color: #FFECFB;
 }
 
 .footer-content p {
@@ -12,10 +12,10 @@
 }
 
 .footer-content a {
-  color: #1282A2; /* LIGHT BLUE */
+  color: #1282A2;
   text-decoration: none;
 }
 
 .footer-content a:hover {
-  color: #5fb1ff; /* BLUE */
+  color: #5fb1ff;
 }
