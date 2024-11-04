@@ -1,29 +1,16 @@
-.middle-content {
-  text-align: center;
-  padding: 50px 20px;
-  font-family: 'Times New Roman', Times, serif;
+/* General styles */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.middle-content h2 {
-  font-size: 48px;
-  color: #1282A2; /* Celeste claro */
-  margin-bottom: 10px;
-}
-
-.middle-content p {
-  font-size: 18px;
-  color: #0A1128; /* Azul oscuro */
-  margin-bottom: 30px;
-}
-
-.highlight {
-  color: #1282A2; /* Celeste claro */
-}
-
+/* Buttons */
 .cta-button {
   padding: 12px 30px;
-  background-color: #034078; /* Azul oscuro */
-  color: #FFECFB; /* Blanco */
+  background-color: #034078;
+  color: #FFECFB;
   text-decoration: none;
   font-size: 20px;
   border-radius: 5px;
@@ -32,16 +19,110 @@
 }
 
 .cta-button:hover {
-  background-color: #001F54; /* Azul más oscuro */
+  background-color: #001F54;
 }
 
-.middle-image {
-  margin-top: 20px;
+/* Content sections */
+
+.about-section, .join-section, .reviews-section, .projects-section, .faq-section {
+  padding: 50px 20px;
   text-align: center;
 }
 
-.middle-image img {
-  max-width: 80%;
-  height: auto;
-  border-radius: 10px;
+/* FAQ Section */
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h3 {
+  font-size: 18px;
+  color: #034078;
+}
+
+/* Grid styles */
+.courses-grid, .reviews-grid, .projects-grid, .team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Specific component styles */
+
+/* Project Box */
+.project-box {
+  padding: 20px;
+  background-color: #e6f7ff;
+  border-radius: 8px;
+  text-align: left;
+}
+
+/* Team Member */
+.team-member {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.member-photo {
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+/* CTA Section - Mejora solo de la primera sección */
+.cta-container {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f4f8fb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.cta-container h2 {
+  font-size: 36px;
+  color: #034078;
+  margin-bottom: 20px;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cta-buttons .cta-button {
+  padding: 12px 30px;
+  background-color: #034078;
+  color: #FFECFB;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 5px 0;
+  width: fit-content;
+  align-self: center;
+}
+
+.cta-buttons .cta-button:hover {
+  background-color: #001F54;
+}
+
+.cta-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.cta-image {
+  width: 200px;
+  height: 150px;
+  background-color: #e6f7ff;
+  border-radius: 8px;
+  display: inline-block;
 }

@@ -1,0 +1,53 @@
+<app-navbar-tutor></app-navbar-tutor>
+
+<main class="course-content-container">
+  <h2>{{ curso }}</h2>
+  <p>Bienvenido a la página del curso "{{ curso }}". Aquí puedes gestionar tus contenidos, tareas y estudiantes.</p>
+
+  <div class="course-actions">
+    <button routerLink="/tutor/subir-material" class="action-button">Subir Contenido</button>
+    <button routerLink="/tutor/asignar-tarea" class="action-button">Asignar Tareas</button>
+    <button routerLink="/tutor/" class="action-button">Asignar Evaluaciones</button>
+    <button routerLink="/tutor/evaluar-desempeno" class="action-button">Evaluar Alumnos</button>
+    <button routerLink="/tutor/" class="action-button">Calificar Tareas y Evaluaciones</button>
+    <button routerLink="/tutor/gestion-tutoria" class="action-button">Tutorias</button>
+  </div>
+
+  <div class="units-container">
+    <div class="unit">
+      <button class="unit-toggle" (click)="toggleUnit('first')">Primera Unidad</button>
+      <div class="weeks" *ngIf="showFirstUnit">
+        <p>Semana 1</p>
+        <p>Semana 2</p>
+        <p>Semana 3</p>
+        <p>Semana 4</p>
+        <p>Semana 5</p>
+      </div>
+    </div>
+
+    <div class="unit">
+      <button class="unit-toggle" (click)="toggleUnit('second')">Segunda Unidad</button>
+      <div class="weeks" *ngIf="showSecondUnit">
+        <p>Semana 6</p>
+        <p>Semana 7</p>
+        <p>Semana 8</p>
+        <p>Semana 9</p>
+        <p>Semana 10</p>
+        <p>Semana 11</p>
+      </div>
+    </div>
+
+    <div class="unit">
+      <button class="unit-toggle" (click)="toggleUnit('third')">Tercera Unidad</button>
+      <div class="weeks" *ngIf="showThirdUnit">
+        <p>Semana 12</p>
+        <p>Semana 13</p>
+        <p>Semana 14</p>
+        <p>Semana 15</p>
+        <p>Semana 16</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<app-footer></app-footer>

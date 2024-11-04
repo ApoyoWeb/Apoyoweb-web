@@ -1,0 +1,74 @@
+.navbar {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+#logo {
+  font-size: 40px;
+  margin: 0;
+}
+
+#menu {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+#menu li {
+  margin-right: 80px;
+}
+
+#menu a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
+}
+
+#menu a:hover {
+  color: rgb(151, 149, 149);
+}
+
+.user-box {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.user-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-size: 16px;
+  color: green;
+  margin: 0;
+}
+
+.settings-link {
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+}
+
+.settings-link:hover {
+  color: black;
+}

@@ -1,1 +1,19 @@
-<p>gestion-grabaciones works!</p>
+<app-navbar-tutor></app-navbar-tutor>
+
+<main class="recordings-management-container">
+  <h2 class="management-title">Gestión de Grabaciones</h2>
+
+  <div *ngIf="grabaciones.length === 0" class="no-recordings">
+    No hay grabaciones disponibles.
+  </div>
+
+  <div *ngFor="let grabacion of grabaciones" class="recording-item">
+    <div class="recording-description">
+      <h3>{{ grabacion.titulo }}</h3>
+      <p>{{ grabacion.descripcion }}</p>
+    </div>
+    <button (click)="eliminarGrabacion(grabacion)" class="delete-button">Eliminar</button>
+  </div>
+</main>
+
+<app-footer></app-footer>

@@ -1,1 +1,55 @@
-<p>asignar-tarea works!</p>
+<app-navbar-tutor></app-navbar-tutor>
+
+<main class="assign-task-container">
+  <h2 class="assign-task-title">Asignar Nueva Tarea</h2>
+
+  <form class="assign-task-form">
+    <div class="form-group">
+      <label for="taskName">Nombre de la Tarea</label>
+      <input type="text" id="taskName" placeholder="Escribe el nombre de la tarea" />
+    </div>
+
+    <div class="form-group">
+      <label for="taskDescription">Descripción</label>
+      <textarea id="taskDescription" rows="4" placeholder="Escribe una descripción para la tarea"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="unitSelect">Unidad</label>
+      <select id="unitSelect">
+        <option value="1">Primera Unidad</option>
+        <option value="2">Segunda Unidad</option>
+        <option value="3">Tercera Unidad</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="weekSelect">Semana</label>
+      <select id="weekSelect">
+        <option value="1">Semana 1</option>
+        <option value="2">Semana 2</option>
+        <option value="3">Semana 3</option>
+        <option value="4">Semana 4</option>
+        <option value="5">Semana 5</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="startDate">Fecha de Inicio</label>
+      <input type="date" id="startDate" />
+      <label for="startTime">Hora de Inicio</label>
+      <input type="time" id="startTime" />
+    </div>
+
+    <div class="form-group">
+      <label for="endDate">Fecha Límite</label>
+      <input type="date" id="endDate" />
+      <label for="endTime">Hora Límite</label>
+      <input type="time" id="endTime" />
+    </div>
+
+    <button type="button" class="publish-button" routerLink="/tutor/homepage-tutor" (click)="publicarTarea()">Publicar Tarea</button>
+  </form>
+</main>
+
+<app-footer></app-footer>

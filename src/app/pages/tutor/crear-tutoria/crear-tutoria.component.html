@@ -1,0 +1,43 @@
+<app-navbar-tutor></app-navbar-tutor>
+
+<main class="create-group-tutoria-container">
+  <h2 class="create-tutoria-title">Crear Tutoría Grupal</h2>
+
+  <form class="create-tutoria-form" (ngSubmit)="crearTutoriaGrupal()">
+    <div class="form-group">
+      <label for="cursoSelect">Seleccionar Curso</label>
+      <select id="cursoSelect" class="form-input" [(ngModel)]="cursoSeleccionado" name="curso" required>
+        <option *ngFor="let curso of cursos" [value]="curso">{{ curso }}</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="fecha">Fecha</label>
+      <input type="date" id="fecha" class="form-input" [(ngModel)]="fecha" name="fecha" required />
+    </div>
+
+    <div class="form-group">
+      <label for="horaInicio">Hora de Inicio</label>
+      <input type="time" id="horaInicio" class="form-input" [(ngModel)]="horaInicio" name="horaInicio" required />
+    </div>
+
+    <div class="form-group">
+      <label for="horaFin">Hora de Fin</label>
+      <input type="time" id="horaFin" class="form-input" [(ngModel)]="horaFin" name="horaFin" required />
+    </div>
+
+    <div class="form-group">
+      <label for="maxAlumnos">Cantidad Máxima de Alumnos</label>
+      <input type="number" id="maxAlumnos" class="form-input" [(ngModel)]="maxAlumnos" name="maxAlumnos" min="1" required />
+    </div>
+
+    <div class="form-group">
+      <label for="precio">Precio (opcional)</label>
+      <input type="number" id="precio" class="form-input" [(ngModel)]="precio" name="precio" min="0" placeholder="Precio de la tutoría en $" />
+    </div>
+
+    <button type="submit" class="submit-button">Crear Tutoría Grupal</button>
+  </form>
+</main>
+
+<app-footer></app-footer>
