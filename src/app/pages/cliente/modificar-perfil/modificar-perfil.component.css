@@ -1,0 +1,77 @@
+.profile-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  min-height: calc(100vh - 260px);
+}
+
+.profile-title {
+  font-size: 28px;
+  color: #034078;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 16px;
+  color: #034078;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #034078;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.save-button, .cancel-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.save-button {
+  background-color: #034078;
+}
+
+.save-button:hover {
+  background-color: #012a57;
+}
+
+.cancel-button {
+  background-color: #ff4d4d;
+}
+
+.cancel-button:hover {
+  background-color: #cc0000;
+}

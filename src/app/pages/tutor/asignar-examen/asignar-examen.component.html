@@ -1,0 +1,50 @@
+<app-navbar-tutor></app-navbar-tutor>
+
+<main class="assign-exam-container">
+  <h2 class="assign-exam-title">Asignar Nuevo Examen</h2>
+
+  <form class="assign-exam-form">
+    <div class="form-group">
+      <label for="examTitle">Título del Examen</label>
+      <input type="text" id="examTitle" placeholder="Escribe el título del examen" />
+    </div>
+
+    <div class="form-group">
+      <label for="examDescription">Descripción</label>
+      <textarea id="examDescription" rows="4" placeholder="Escribe una descripción para el examen"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="timeLimit">Tiempo Límite (en minutos)</label>
+      <input type="number" id="timeLimit" placeholder="Ejemplo: 120" />
+    </div>
+
+    <div class="form-group">
+      <label for="startDate">Fecha de Inicio</label>
+      <input type="date" id="startDate" />
+      <label for="startTime">Hora de Inicio</label>
+      <input type="time" id="startTime" />
+    </div>
+
+    <div class="form-group">
+      <label for="endDate">Fecha Final</label>
+      <input type="date" id="endDate" />
+      <label for="endTime">Hora Final</label>
+      <input type="time" id="endTime" />
+    </div>
+
+    <div class="form-group">
+      <label for="examContent">Contenido del Examen</label>
+      <input type="file" id="examContent" />
+      <small>Puedes subir un archivo PDF o Word con el contenido del examen.</small>
+    </div>
+
+    <div class="form-group">
+      <button type="button" class="create-exam-button">Crear Examen en la Web</button>
+    </div>
+
+    <button type="button" class="publish-exam-button" routerLink="/tutor/homepage-tutor" (click)="publicarExamen()">Publicar Examen</button>
+  </form>
+</main>
+
+<app-footer></app-footer>

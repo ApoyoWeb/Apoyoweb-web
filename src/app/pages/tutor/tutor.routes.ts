@@ -12,6 +12,7 @@ import { CursosGeneralComponent } from './cursos-general/cursos-general.componen
 import { CursoIndividualComponent } from './curso-individual/curso-individual.component';
 import { CrearTutoriaComponent } from './crear-tutoria/crear-tutoria.component';
 import { CrearTutoriaPersonalComponent } from './crear-tutoria-personal/crear-tutoria-personal.component';
+import { AsignarExamenComponent } from './asignar-examen/asignar-examen.component';
 
 
 
@@ -50,6 +51,7 @@ export const tutorRoutes: Routes = [
       {path: 'curso-individual/:curso', component: CursoIndividualComponent},
       {path: 'crear-tutoria', component: CrearTutoriaComponent},
       {path: 'crear-tutoria-personal', component: CrearTutoriaPersonalComponent},
+      {path: 'asignar-examen',component: AsignarExamenComponent},
     ]
 
 
