@@ -1,0 +1,65 @@
+.assign-exam-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.assign-exam-title {
+  font-size: 28px;
+  color: #034078;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.assign-exam-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group label {
+  font-size: 16px;
+  color: #034078;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-group input[type="file"] {
+  border: none;
+}
+
+.create-exam-button,
+.publish-exam-button {
+  padding: 12px;
+  font-size: 18px;
+  background-color: #1282A2;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-exam-button:hover,
+.publish-exam-button:hover {
+  background-color: #034078;
+}
+
+.publish-exam-button {
+  margin-top: 20px;
+}
