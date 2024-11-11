@@ -1,6 +1,6 @@
-/* Header */
+
 .navbar {
-  background-color: #0A1128; /* DARK BLUE */
+  background-color: #0A1128;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -9,20 +9,20 @@
 
 .navbar-brand {
   font-size: 24px;
-  color: #FFECFB; /* WHITE */
+  color: #FFECFB;
   text-decoration: none;
   font-family: 'Times New Roman', Times, serif;
 }
 
 .nav-link {
   font-size: 18px;
-  color: #FFECFB; /* WHITE */
+  color: #FFECFB;
   margin-right: 20px;
   text-decoration: none;
 }
 
 .nav-link:hover {
-  color: #1282A2; /* LIGHT BLUE */
+  color: #1282A2;
 }
 
 .navbar-links {

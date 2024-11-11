@@ -2,17 +2,22 @@
 
 <main>
     <div class="cta-container">
-        <h2>Llega a tus metas académicas con nosotros</h2>
-        <div class="cta-buttons">
-          <a routerLink="/auth/login" class="cta-button">Busca a un tutor</a>
-          <p>¿Quieres ser tutor?</p>
-          <a routerLink="/auth/register" class="cta-button">Regístrate</a>
-      </div>
-
-        <div class="cta-images">
-            <p>¿Cómo busco un tutor?</p>
-            <img src="img/video_placeholder.png" alt="Video explicativo" class="cta-image">
-            <img src="img/image_placeholder.png" alt="Imagen descriptiva" class="cta-image">
+        <div class="cta-content">
+            <div class="cta-text-buttons">
+                <h2>Llega a tus metas académicas con nosotros</h2>
+                <div class="cta-buttons">
+                    <a routerLink="/auth/login" class="cta-button">Busca a un tutor</a>
+                    <p>¿Quieres ser tutor?</p>
+                    <a routerLink="/auth/register" class="cta-button">Regístrate</a>
+                </div>
+                <div class="cta-video">
+                    <p>¿Cómo busco un tutor?</p>
+                    <a href="https://youtu.be/0qDkeJhJ8sY">
+                      <img src="img/click_video.PNG" alt="Video explicativo" class="cta-image">
+                    </a>
+                  </div>
+            </div>
+            <img src="img/headear al lado.png" alt="Imagen descriptiva" class="cta-image-large">
         </div>
     </div>
 
@@ -25,7 +30,7 @@
             <li>Comunicación directa con tutores expertos en cada materia.</li>
             <li>Opciones de aprendizaje flexible, adaptadas a tu horario.</li>
         </ul>
-        <a href="#" class="cta-button">Regístrate</a>
+        <a class="cta-button" routerLink="/auth/register" routerLinkActive="active">Regístrate</a>
     </div>
 
     <div class="reviews-section">
@@ -57,25 +62,25 @@
         <div class="team-grid">
             <div class="team-member">
                 <h3>Carlos Molina Huatuco</h3>
-                <div class="member-photo" style="background-image: url('img/carlosmolina.PNG');"></div>
+                <div class="member-photo" style="background-image: url('/img/carlosmolina.PNG');"></div>
                 <p class="member-role">Team Leader</p>
                 <p class="member-description">Trabajar y aportar en este proyecto ha sido increíble.</p>
             </div>
             <div class="team-member">
                 <h3>Ernesto de Loayza Zamudio</h3>
-                <div class="member-photo" style="background-image: url('img/ernesto loayza.PNG');"></div>
+                <div class="member-photo" style="background-image: url('/img/ernesto loayza.PNG');"></div>
                 <p class="member-role">Team Member</p>
                 <p class="member-description">Programar diferentes secciones de este proyecto es una experiencia única.</p>
             </div>
             <div class="team-member">
                 <h3>Sebastian Rojas Velez de Villa</h3>
-                <div class="member-photo" style="background-image: url('img/sebastianrojas.PNG');"></div>
+                <div class="member-photo" style="background-image: url('/img/sebastianrojas.PNG');"></div>
                 <p class="member-role">Team Member</p>
                 <p class="member-description">Me ha fascinado implementar lo que sé en este proyecto.</p>
             </div>
             <div class="team-member">
                 <h3>Danilo Garcia Rosales</h3>
-                <div class="member-photo" style="background-image: url('img/Danilo.PNG');"></div>
+                <div class="member-photo" style="background-image: url('/img/Danilo.PNG');"></div>
                 <p class="member-role">Team Member</p>
                 <p class="member-description">Gestionar tanto código e imágenes es un verdadero reto.</p>
             </div>
@@ -87,19 +92,19 @@
         <div class="projects-grid">
             <div class="project-box">
                 <h3>¡Edúcate niño!</h3>
-                <div class="project-photo" style="background-image: url('img/educatenino.PNG');"></div>
+                <div class="project-photo" style="background-image: url('/img/educatenino.PNG');"></div>
                 <p class="project-description">Desarrollo de una plataforma educativa interactiva para estudiantes de primaria.</p>
                 <p class="project-date">Fecha de culminación: 20/02/2020</p>
             </div>
             <div class="project-box">
                 <h3>Disparos letales</h3>
-                <div class="project-photo" style="background-image: url('img/disparosletales.PNG');"></div>
+                <div class="project-photo" style="background-image: url('/img/disparosletales.PNG');"></div>
                 <p class="project-description">Creación de un juego FPS para plataforma "Steam".</p>
                 <p class="project-date">Fecha de culminación: 15/05/2021</p>
             </div>
             <div class="project-box">
                 <h3>Hello mundo</h3>
-                <div class="project-photo" style="background-image: url('img/hellomundo.PNG');"></div>
+                <div class="project-photo" style="background-image: url('/img/hellomundo.PNG');"></div>
                 <p class="project-description">Desarrollo de una aplicación móvil para la enseñanza de idiomas.</p>
                 <p class="project-date">Fecha de culminación: 10/08/2022</p>
             </div>
