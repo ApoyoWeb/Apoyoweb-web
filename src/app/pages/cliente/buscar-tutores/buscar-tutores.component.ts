@@ -31,7 +31,21 @@ export class BuscarTutoresComponent {
     { name: 'José Ramírez', category: 'Programación', ranking: 4.9, price: 60, availability: 'noche' },
     { name: 'Lucía Torres', category: 'Matemáticas', ranking: 4.3, price: 35, availability: 'mañana' },
     { name: 'Laura Fernández', category: 'Química', ranking: 3.7, price: 25, availability: 'tarde' },
-    // Agrega más tutores aquí según sea necesario
+    { name: 'Daniel Vega', category: 'Biología', ranking: 3.9, price: 30, availability: 'mañana' },
+    { name: 'Marcela Ortiz', category: 'Historia', ranking: 4.2, price: 20, availability: 'tarde' },
+    { name: 'Rosa Sánchez', category: 'Filosofía', ranking: 3.5, price: 15, availability: 'noche' },
+    { name: 'Juan Herrera', category: 'Literatura', ranking: 4.6, price: 55, availability: 'mañana' },
+    { name: 'Elena Ruiz', category: 'Inglés', ranking: 4.0, price: 25, availability: 'noche' },
+    { name: 'Roberto Díaz', category: 'Programación', ranking: 4.7, price: 65, availability: 'tarde' },
+    { name: 'Carmen Jiménez', category: 'Química', ranking: 3.6, price: 20, availability: 'mañana' },
+    { name: 'Luis Mora', category: 'Física', ranking: 4.1, price: 45, availability: 'noche' },
+    { name: 'Patricia Castro', category: 'Matemáticas', ranking: 3.4, price: 18, availability: 'mañana' },
+    { name: 'Sofía Martínez', category: 'Biología', ranking: 4.8, price: 70, availability: 'noche' },
+    { name: 'Miguel Rivera', category: 'Historia', ranking: 4.3, price: 40, availability: 'tarde' },
+    { name: 'Andrea Gómez', category: 'Filosofía', ranking: 3.8, price: 22, availability: 'mañana' },
+    { name: 'Fernando Torres', category: 'Matemáticas', ranking: 4.9, price: 80, availability: 'tarde' },
+    { name: 'Alejandro Ramos', category: 'Química', ranking: 3.5, price: 17, availability: 'mañana' },
+    { name: 'Marta Aguirre', category: 'Inglés', ranking: 4.7, price: 50, availability: 'tarde' }
   ];
 
   filteredTutors = [...this.tutors];
