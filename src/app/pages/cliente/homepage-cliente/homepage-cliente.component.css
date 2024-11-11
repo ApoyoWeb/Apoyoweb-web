@@ -1,11 +1,13 @@
 .cliente-homepage {
   font-family: Arial, sans-serif;
+  min-height: calc(100vh - 280px);
 }
 
 .welcome-section {
   text-align: center;
   padding: 40px 20px;
   background-color: #f4f8fb;
+
 }
 
 .welcome-section h1 {
