@@ -1,8 +1,56 @@
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.cta-container {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f4f8fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.cta-text-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.cta-buttons .cta-button {
+  width: fit-content;
+}
+
+.cta-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta-video p {
+  margin-bottom: 10px;
+}
+
+.cta-image-large {
+  width: 600px;
 }
 
 .cta-button {
@@ -12,7 +60,6 @@
   text-decoration: none;
   font-size: 20px;
   border-radius: 5px;
-  margin-bottom: 20px;
   display: inline-block;
 }
 
@@ -20,10 +67,22 @@
   background-color: #001F54;
 }
 
-
-.about-section, .join-section, .reviews-section, .projects-section, .faq-section {
+.about-section,
+.join-section,
+.reviews-section,
+.projects-section,
+.faq-section {
   padding: 50px 20px;
   text-align: center;
+}
+
+.project-photo {
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 .faq-item {
@@ -35,12 +94,14 @@
   color: #034078;
 }
 
-.courses-grid, .reviews-grid, .projects-grid, .team-grid {
+.courses-grid,
+.reviews-grid,
+.projects-grid,
+.team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
-
 
 .project-box {
   padding: 20px;
@@ -61,59 +122,4 @@
   background-size: cover;
   background-position: center;
   margin-bottom: 10px;
-}
-
-.cta-container {
-  text-align: center;
-  padding: 50px 20px;
-  background-color: #f4f8fb;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-
-.cta-container h2 {
-  font-size: 36px;
-  color: #034078;
-  margin-bottom: 20px;
-}
-
-.cta-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.cta-buttons .cta-button {
-  padding: 12px 30px;
-  background-color: #034078;
-  color: #FFECFB;
-  text-decoration: none;
-  font-size: 20px;
-  border-radius: 5px;
-  display: inline-block;
-  margin: 5px 0;
-  width: fit-content;
-  align-self: center;
-}
-
-.cta-buttons .cta-button:hover {
-  background-color: #001F54;
-}
-
-.cta-images {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.cta-image {
-  width: 200px;
-  height: 150px;
-  background-color: #e6f7ff;
-  border-radius: 8px;
-  display: inline-block;
 }

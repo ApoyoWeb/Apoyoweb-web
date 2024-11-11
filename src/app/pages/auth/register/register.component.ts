@@ -8,6 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { FooterComponent } from '../../../shared/components/footer/footer.component';
 import { NavbarHomeComponent } from '../../../shared/components/navbar-home/navbar-home.component';
 import { NgIf } from '@angular/common';
+import { MatRadioButton } from '@angular/material/radio';
 
 @Component({
   selector: 'app-register',
@@ -21,7 +22,8 @@ import { NgIf } from '@angular/common';
     MatSnackBarModule,
     MatInputModule,
     MatCardModule,
-    MatButtonModule, NgIf
+    MatButtonModule,
+    NgIf, MatRadioButton,
   ],
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
@@ -34,8 +36,11 @@ export class RegisterComponent {
 
   constructor() {
     this.registerForm = this.fb.group({
-      fullName: ['', [Validators.required]],
+      firstName: ['', [Validators.required]],
+      lastName: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
+      university: [''],
+      role: ['', Validators.required],
       password: ['', [Validators.required, Validators.minLength(6)]],
       confirmPassword: ['', [Validators.required]]
     }, { validators: this.mustMatch('password', 'confirmPassword') });
@@ -58,6 +63,9 @@ export class RegisterComponent {
     };
   }
 
+  ngAfterViewInit() {
+    setTimeout(() => window.dispatchEvent(new Event('resize')), 0);
+  }
 
   controlHasError(control: string, error: string) {
     return this.registerForm.controls[control].hasError(error);
@@ -70,7 +78,6 @@ export class RegisterComponent {
       verticalPosition: 'bottom',
     });
   }
-
 
   onSubmit() {
     if (this.registerForm.valid) {
