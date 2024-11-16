@@ -19,7 +19,8 @@ import { AsignarExamenComponent } from './asignar-examen/asignar-examen.componen
 
 
 export const tutorRoutes: Routes = [
-  {path:'',
+  {
+    path: '',
     component: TutorLayoutComponent,
     children: [
       {
@@ -28,15 +29,15 @@ export const tutorRoutes: Routes = [
 
 
       {
-        path:'evaluar-desempeno', component: EvaluarDesempenoComponent,
+        path: 'evaluar-desempeno', component: EvaluarDesempenoComponent,
       },
 
       {
-        path:'modificar-perfil', component: ModificarPerfilComponent,
+        path: 'modificar-perfil', component: ModificarPerfilComponent,
       },
 
       {
-        path:'subir-feedback', component: SubirFeedbackComponent,
+        path: 'subir-feedback', component: SubirFeedbackComponent,
       },
 
       {
@@ -46,12 +47,12 @@ export const tutorRoutes: Routes = [
       { path: 'gestion-grabaciones', component: GestionGrabacionesComponent },
 
       { path: 'gestion-tutoria', component: GestionTutoriaComponent },
-      {path: 'homepage-tutor', component: HomepageTutorComponent},
-      {path: 'cursos-general', component: CursosGeneralComponent},
-      {path: 'curso-individual/:curso', component: CursoIndividualComponent},
-      {path: 'crear-tutoria', component: CrearTutoriaComponent},
-      {path: 'crear-tutoria-personal', component: CrearTutoriaPersonalComponent},
-      {path: 'asignar-examen',component: AsignarExamenComponent},
+      { path: 'homepage-tutor', component: HomepageTutorComponent },
+      { path: 'cursos-general', component: CursosGeneralComponent },
+      { path: 'curso-individual/:curso', component: CursoIndividualComponent },
+      { path: 'crear-tutoria', component: CrearTutoriaComponent },
+      { path: 'crear-tutoria-personal', component: CrearTutoriaPersonalComponent },
+      { path: 'asignar-examen', component: AsignarExamenComponent },
       {
         path: 'tutor/asignar-tarea/:courseName',
         component: AsignarTareaComponent,
@@ -60,7 +61,6 @@ export const tutorRoutes: Routes = [
         path: 'tutor/curso-individual/:courseName',
         component: CursoIndividualComponent,
       },
-      {},
 
     ]
 
