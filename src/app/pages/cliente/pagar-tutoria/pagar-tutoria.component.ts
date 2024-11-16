@@ -27,6 +27,7 @@ export class PagarTutoriaComponent {
   expirationDate: string = '';
   securityCode: string = '';
 
+
   constructor(private route: ActivatedRoute, private router: Router) {
     this.route.queryParams.subscribe((params) => {
       this.tutorName = params['tutorName'] || 'Tutor no especificado';
@@ -34,6 +35,25 @@ export class PagarTutoriaComponent {
     });
   }
 
+  changeCardName(event: Event): void {
+    const target = event.target as HTMLInputElement;
+    this.cardName = target.value;
+  }
+
+  changeCardNumber(event: Event): void {
+    const target = event.target as HTMLInputElement;
+    this.cardNumber = target.value;
+  }
+
+  changeExpirationDate(event: Event): void {
+    const target = event.target as HTMLInputElement;
+    this.expirationDate = target.value;
+  }
+
+  changeSecurityCode(event: Event): void {
+    const target = event.target as HTMLInputElement;
+    this.securityCode = target.value;
+  }
   submitPayment(): void {
     if (this.cardName && this.cardNumber && this.expirationDate && this.securityCode) {
       alert('Pago realizado exitosamente');
