@@ -1,0 +1,71 @@
+.payment-container {
+  max-width: 600px;
+  margin: 20px auto;
+  min-height: calc(100vh - 320px);
+  padding: 30px;
+  background-color: #fdfdff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-title {
+  font-size: 28px;
+  color: #034078;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.tutor-name {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #034078;
+  font-weight: bold;
+}
+
+.total-price {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #034078;
+  font-weight: bold;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #034078;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.pay-button {
+  padding: 10px 20px;
+  background-color: #034078;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pay-button:hover {
+  background-color: #001F54;
+}

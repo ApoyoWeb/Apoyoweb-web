@@ -34,7 +34,7 @@ export class SubirMaterialComponent {
       verticalPosition: 'top',
     });
     setTimeout(() => {
-      this.router.navigate(['/tutor/homepage-tutor']);
+      this.router.navigate(['/tutor/cursos-general']);
     }, 3000);
   }
 }

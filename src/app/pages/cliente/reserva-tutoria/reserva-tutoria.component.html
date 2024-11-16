@@ -1,1 +1,53 @@
-<p>reserva-tutoria works!</p>
+<app-navbar-cliente></app-navbar-cliente>
+
+<main class="reservation-container">
+  <h2 class="reservation-title">Reservar Tutoría</h2>
+  <p class="tutor-name">Tutor: {{ tutorName }}</p>
+
+  <form class="reservation-form">
+    <div class="form-group">
+      <label for="date">Fecha:</label>
+      <input type="date" id="date" required />
+    </div>
+
+    <div class="form-group">
+      <label for="time">Hora:</label>
+      <select id="time" required>
+        <option value="09:00">09:00 AM</option>
+        <option value="10:00">10:00 AM</option>
+        <option value="11:00">11:00 AM</option>
+        <option value="14:00">02:00 PM</option>
+        <option value="15:00">03:00 PM</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="duration">Duración:</label>
+      <select id="duration" required [(ngModel)]="selectedDuration" (change)="updatePrice()">
+        <option value="1">1 hora</option>
+
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="price">Precio Total:</label>
+      <input
+        type="text"
+        id="price"
+        [value]="totalPrice | currency:'S/'"
+        readonly
+      />
+    </div>
+
+    <button
+      type="button"
+      class="confirm-button"
+      [routerLink]="['/cliente/pagar-tutoria']"
+      [queryParams]="{ tutorName: tutorName, totalAmount: totalPrice }"
+    >
+      Confirmar Reserva
+    </button>
+  </form>
+</main>
+
+<app-footer></app-footer>

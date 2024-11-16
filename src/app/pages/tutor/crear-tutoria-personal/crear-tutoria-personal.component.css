@@ -5,6 +5,7 @@
   background-color: #ffffff;
   border-radius: 10px;
   font-family: Arial, sans-serif;
+  min-height: calc(100vh - 235px);
 }
 
 .create-tutoria-title {

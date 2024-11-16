@@ -46,6 +46,7 @@
 .action-buttons {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .action-button {

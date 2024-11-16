@@ -3,6 +3,12 @@
 <main class="tutoria-management-container">
   <h2 class="management-title">Mis Tutorías</h2>
 
+  <div class="action-buttons">
+    <button class="action-button" routerLink="/tutor/crear-tutoria">Crear Tutoría Grupal</button>
+    <button class="action-button" routerLink="/tutor/crear-tutoria-personal">Crear Tutoría Personal</button>
+    <button class="action-button" routerLink="/tutor/gestion-grabaciones">Ver Grabaciones</button>
+  </div>
+
   <div class="tutoria-list">
     <div *ngFor="let tutoria of tutorias" class="tutoria-card">
       <h3 class="tutoria-name">{{ tutoria.nombre }}</h3>
@@ -12,11 +18,7 @@
     </div>
   </div>
 
-  <div class="action-buttons">
-    <button class="action-button" routerLink="/tutor/crear-tutoria">Crear Tutoría Grupal</button>
-    <button class="action-button" routerLink="/tutor/crear-tutoria-personal">Crear Tutoría Personal</button>
-    <button class="action-button" routerLink="/tutor/gestion-grabaciones">Ver Grabaciones</button>
-  </div>
+
 </main>
 
 <app-footer></app-footer>

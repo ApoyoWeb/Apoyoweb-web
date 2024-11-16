@@ -35,7 +35,7 @@
         <textarea id="reportDescription" [(ngModel)]="reportDescription" rows="4" placeholder="Introduce una descripción"></textarea>
       </div>
 
-      <button type="button" class="generate-button" (click)="generarReportePersonalizado()">
+      <button type="button" class="generate-button" routerLink="/tutor/cursos-general" routerLinkActive="router-link-active"  (click)="generarReportePersonalizado()">
         Generar Reporte Personalizado
       </button>
     </form>

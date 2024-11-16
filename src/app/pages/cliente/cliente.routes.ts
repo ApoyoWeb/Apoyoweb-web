@@ -5,6 +5,8 @@ import { ModificarPerfilComponent } from './modificar-perfil/modificar-perfil.co
 import { PagarTutoriaComponent } from './pagar-tutoria/pagar-tutoria.component';
 import { ReservaTutoriaComponent } from './reserva-tutoria/reserva-tutoria.component';
 import { HomepageClienteComponent } from './homepage-cliente/homepage-cliente.component';
+import { ContactanosComponent } from './contactanos/contactanos.component';
+
 
 export const clienteRoutes: Routes = [
   {path: '', component: ClienteLayoutComponent,
@@ -14,6 +16,7 @@ export const clienteRoutes: Routes = [
     {path: 'pagar-tutoria',component:PagarTutoriaComponent},
     {path: 'reserva-tutoria', component: ReservaTutoriaComponent},
     {path: 'homepage-cliente', component: HomepageClienteComponent},
+{path: 'contactanos',component: ContactanosComponent},
   ]
 
   },

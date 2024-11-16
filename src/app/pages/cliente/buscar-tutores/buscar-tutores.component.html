@@ -46,13 +46,22 @@
       <p>Categoría: {{ tutor.category }}</p>
       <p>Ranking: {{ tutor.ranking }}</p>
       <p>Precio por hora: S/{{ tutor.price }}</p>
-      <button class="contact-button">Contactar</button>
+      <button
+  type="button"
+  class="contact-button"
+  [routerLink]="['/cliente/reserva-tutoria']"
+  [queryParams]="{ tutorName: tutor.name, pricePerHour: tutor.price }"
+>
+  Contactar
+</button>
+
     </div>
-    <mat-paginator [length]="filteredTutors.length"
-                   [pageSize]="pageSize"
-                   [pageSizeOptions]="[5, 10, 20]"
-                   (page)="onPageChange($event)">
-    </mat-paginator>
+    <mat-paginator
+      [length]="filteredTutors.length"
+      [pageSize]="pageSize"
+      [pageSizeOptions]="[5, 10, 20]"
+      (page)="onPageChange($event)"
+    ></mat-paginator>
   </section>
 
   <section *ngIf="filteredTutors.length === 0 && searchPerformed" class="no-results">

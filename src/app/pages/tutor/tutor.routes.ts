@@ -52,6 +52,16 @@ export const tutorRoutes: Routes = [
       {path: 'crear-tutoria', component: CrearTutoriaComponent},
       {path: 'crear-tutoria-personal', component: CrearTutoriaPersonalComponent},
       {path: 'asignar-examen',component: AsignarExamenComponent},
+      {
+        path: 'tutor/asignar-tarea/:courseName',
+        component: AsignarTareaComponent,
+      },
+      {
+        path: 'tutor/curso-individual/:courseName',
+        component: CursoIndividualComponent,
+      },
+      {},
+
     ]
 
 
